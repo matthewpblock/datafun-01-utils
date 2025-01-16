@@ -4,8 +4,7 @@ Module: utils_block
 Purpose: Reusable Module for My Analytics Projects
 
 Description: This module provides a byline for analytics projects. 
-When we work hard to write useful code, we want it to be reusable.
-A good byline could be used in every Python analytics project we do.
+This byline demonstrates the use of the python statistics library to analyze data. Real data gathered by Garmin watch tracking through 2024.
 
 Author: Matthew Block, based on the example by Dr. Case
 
