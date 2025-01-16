@@ -42,7 +42,8 @@ waves_ridden_count: list = [5, 6, 20, 10, 7, 6, 6, 10, 3, 9, 10, 7, 12, 11]
 # Calculate basic statistics using built-in Python functions and the statistics module
 min_score: float = min(waves_ridden_count)  
 max_score: float = max(waves_ridden_count)  
-mean_score: float = statistics.mean(waves_ridden_count)  
+mean_score: float = statistics.mean(waves_ridden_count)
+median_score: int = statistics.median(waves_ridden_count)
 stdev_score: float = statistics.stdev(waves_ridden_count)
 
 # Use a Python formatted string (f-string) to show information
@@ -59,6 +60,7 @@ Waves Ridden per Session: {waves_ridden_count}
 Minimum Wave Count: {min_score}
 Maximum Wave Count: {max_score}
 Mean Wave Count: {mean_score:.2f}
+Median Wave Count: {median_score}
 Standard Deviation of Wave Count: {stdev_score:.2f}
 """
 
