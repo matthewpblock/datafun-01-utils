@@ -25,47 +25,41 @@ import statistics  # provides mean(), stdev() and more....
 #####################################
 
 # declare a boolean variable (has a value True or False)
-# TODO: Add another or replace this with your own boolean variable
-has_international_clients: bool = True
+has_surf_tracking_data: bool = True
 
 # declare an integer variable 
-# TODO: Add or replace this with your own integer variable
-years_in_operation: int = 10
+surf_sessions_2024: int = 14
 
 # declare a floating point variable
-# TODO: Add or replace this with your own floating point variable
-average_client_satisfaction: float = 4.7
+average_session_distance: float = 2.119285714
 
 # declare a list of strings
-# TODO: Add or replace this with your own list  
-skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
+surf_locations: list = ["White Plains", "Queens", "Pua'ena"]
 
 # declare a list of numbers so we can illustrate statistics skills
-# TODO: Add or replace this with your own numeric list  
-client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
+waves_ridden_count: list = [5, 6, 20, 10, 7, 6, 6, 10, 3, 9, 10, 7, 12, 11]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
-# TODO: Replace these variable names with the variable name of your own numeric list
-min_score: float = min(client_satisfaction_scores)  
-max_score: float = max(client_satisfaction_scores)  
-mean_score: float = statistics.mean(client_satisfaction_scores)  
-stdev_score: float = statistics.stdev(client_satisfaction_scores)
+min_score: float = min(waves_ridden_count)  
+max_score: float = max(waves_ridden_count)  
+mean_score: float = statistics.mean(waves_ridden_count)  
+stdev_score: float = statistics.stdev(waves_ridden_count)
 
 # Use a Python formatted string (f-string) to show information
 # TODO: Modify the text in the byline to fit your information
 # TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
-Stellar Analytics: Delivering Professional Insights
+Surfing Data: 2024
 ---------------------------------------------------------
-Has International Clients:  {has_international_clients}
-Years in Operation:         {years_in_operation}
-Skills Offered:             {skills_offered}
-Client Satisfaction Scores: {client_satisfaction_scores}
-Minimum Satisfaction Score: {min_score}
-Maximum Satisfaction Score: {max_score}
-Mean Satisfaction Score: {mean_score:.2f}
-Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+Tracked Surfing Data:  {has_surf_tracking_data}
+Number of Surf Sessions:         {surf_sessions_2024}
+Locations:             {surf_locations}
+Waves Ridden per Session: {waves_ridden_count}
+Minimum Wave Count: {min_score}
+Maximum Wave Count: {max_score}
+Mean Wave Count: {mean_score:.2f}
+Standard Deviation of Wave Count: {stdev_score:.2f}
 """
 
 #####################################
@@ -120,4 +114,3 @@ def main() -> None:
 if __name__ == '__main__':
     main()
 
-#TODO: Run this as a script and verify all code works as intended.
